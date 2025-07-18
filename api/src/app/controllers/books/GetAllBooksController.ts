@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { GetAllBooks } from '../../core/usecases/GetAllBooks';
-import { bookRepository } from "../../infra/database/repositoryInstance";
+import { GetAllBooks } from '../../../core/usecases/books/GetAllBooks';
+import { bookRepository } from "../../../infra/database/repositoryInstance";
 
 export class GetAllBooksController {
 

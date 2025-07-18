@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { DeleteBook } from '../../core/usecases/DeleteBook';
-import { bookRepository } from '../../infra/database/repositoryInstance';
+import { DeleteBook } from '../../../core/usecases/books/DeleteBook';
+import { bookRepository } from '../../../infra/database/repositoryInstance';
 
 export class DeleteBookByIdController {
   async handle(req: Request, res: Response): Promise<Response> {

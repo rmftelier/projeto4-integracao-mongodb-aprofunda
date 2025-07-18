@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { UpdateBook } from "../../core/usecases/UpdateBook";
-import { bookRepository } from "../../infra/database/repositoryInstance";
+import { UpdateBook } from "../../../core/usecases/books/UpdateBook";
+import { bookRepository } from "../../../infra/database/repositoryInstance";
 
 export class UpdateBookByIdController {
   async handle(req: Request, res: Response): Promise<Response> {

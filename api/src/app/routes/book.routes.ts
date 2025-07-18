@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { GetAllBooksController } from "../controllers/GetAllBooksController";
-import { GetBookByIdController } from "../controllers/GetBookByIdController";
-import { CreateBookController } from "../controllers/CreateBookController";
-import { UpdateBookByIdController } from "../controllers/UpdateBookByIdController";
-import { DeleteBookByIdController } from "../controllers/DeleteBookByIdController";
+import { GetAllBooksController } from '../controllers/books/GetAllBooksController';
+import { GetBookByIdController } from "../controllers/books/GetBookByIdController";
+import { CreateBookController } from "../controllers/books/CreateBookController";
+import { UpdateBookByIdController } from "../controllers/books/UpdateBookByIdController";
+import { DeleteBookByIdController } from "../controllers/books/DeleteBookByIdController";
 
 const router = Router();
 

@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
-import { CreateBook } from '../../core/usecases/CreateBook';
-import { bookRepository } from '../../infra/database/repositoryInstance';
+import { CreateBook } from '../../../core/usecases/books/CreateBook';
+import { bookRepository } from '../../../infra/database/repositoryInstance';
+
 
 export class CreateBookController {
   async handle(req: Request, res: Response): Promise<Response> {
